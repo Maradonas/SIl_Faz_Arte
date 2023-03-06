@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sil Fazendo Arte</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<img src="img/logo.png" class="logo">
+		</div>
+	</header>
+	<main>
+		<section class="container">
+
+			<table>
+				<h2 class="titulo">Encomendas</h2>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Produto</th>
+						<th>Quantidade</th>
+						<th>Valor Unitário</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-clientes">
+					<tr class="cliente" id="cliente1">
+						<td class="info-nome">Margarete</td>
+						<td class="info-produto">Jogo Americano (4 peças) - Rosa</td>
+						<td class="info-qtde">1</td>
+						<td class="info-valor">Trinta Reais</td>
+						<td class="info-total">0</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Carolina</td>
+						<td class="info-produto">Tapetes Cozinha (3 peças) - Azul</td>
+						<td class="info-qtde">2</td>
+						<td class="info-valor">50</td>
+						<td class="info-total">0</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Daniele</td>
+						<td class="info-produto">Pulseira Cristal Colorida</td>
+						<td class="info-qtde">ABC</td>
+						<td class="info-valor">25</td>
+						<td class="info-total">0</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Daniele</td>
+						<td class="info-produto">Pulseira Cristal Vermelha</td>
+						<td class="info-qtde">1</td>
+						<td class="info-valor">25</td>
+						<td class="info-total">0</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+		<section>
+			<h2 class="TituloCadastro">Cadastrar nova lista</h2>
+			<form action="/submit_order" method="post" class="order-form">
+				<div class="form-group">
+					
+					<label for="name">Nome:</label >
+					<input type="text" id="name" name="name" placeholder="Digite o nome do(a) cliente">
+
+				</div>
+
+				<div class="form-group">
+					<label for="quantity">Quantidade:</label>
+					<input type="number" id="quantity" name="quantity" placeholder="Digite a quantidade de encomendas">
+				</div>
+
+				<div class="form-group">
+					<label for="product">Produto:</label>
+					<select class="ListBoxProduto" id="product" name="product">
+					  <option value="Selecione">Selecione</option>
+					  <option value="Produto 2">Jogo Americano ( 4 peças) - Rosa</option>
+					  <option value="Produto 3">Jogo Americano ( 4 peças) - Amarelo</option>
+					  <option value="Produto 4">Jogo Americano ( 4 peças) - Verde</option>
+					  <option value="Produto 5">Tapetes Cozinha ( 3 peças) - Azul</option>
+					  <option value="Produto 6">Tapetes Cozinha ( 3 peças) - Rosa</option>
+					  <option value="Produto 7">Tapetes Cozinha ( 3 peças) - Amarelo</option>
+					  <option value="Produto 8">Tapetes Cozinha ( 3 peças) - Vermelho</option>
+					  <option value="Produto 9">Pulseira Cristal - Colorida</option>
+					  <option value="Produto 10">Pulseira Cristal - Vermelha</option>
+					  <option value="Produto 11">Pulseira Cristal - Rosa</option>
+					  <option value="Produto 12">Pulseira Cristal - Lilas</option>
+					  <option value="Produto 13">Pulseira Cristal - Preta</option>
+					  <option value="Produto 14">Pulseira Cristal - Roxa</option>
+					  
+					</select>
+				  </div>
+
+				<div class="form-group">
+					<label for="price">R$ Unitário:</label>
+					<input class="preco" type="number" id="price" name="price" step="0.01" placeholder="Digite o valor Unitário do Produto">
+				</div>
+
+				<a href="index.html"><input type="submit" id="BtnCadastrar" value="Cadastrar"></a>
+			</form>
+		</section>
+
+	</main>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

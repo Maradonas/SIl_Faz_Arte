@@ -1,0 +1,113 @@
+body{
+	font-family: "Arial";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header{
+	background-color:#c910d6;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 180px;
+}
+
+section h2{
+	font-size: 42px;
+	display: block;
+	padding-bottom: 20px;
+	
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: 10px;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+.order-form {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+  }
+  
+  .form-group {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+  }
+  
+  .form-group label {
+	margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"]
+  {
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+  }
+
+  .ListBoxProduto{
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+  }
+  #BtnCadastrar{
+	background-color: white;
+	color: black;
+	border-radius: 20px;
+	margin-left: 40%;
+	margin-top: 10px;
+	margin-bottom: 5%;
+	width: 10%;
+	height: 4%;
+	font-size: 20px;
+	text-align: center;
+  }
+
+
+  #BtnCadastrar:hover{
+	background-color: lightcoral;
+	color: white;
+	border-radius: 20px;
+	margin-left: 40%;
+	margin-top: 10px;
+	margin-bottom: 5%;
+	width: 10%;
+	height: 4%;
+	font-size: 25px;
+	text-align: center;
+  }
+ 
+.TituloCadastro{
+	padding-left: 10%;
+}
+
